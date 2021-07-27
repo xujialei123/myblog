@@ -1,0 +1,96 @@
+.block() {
+    display: block;
+}
+.inline() {
+    display: inline;
+}
+.i-block() {
+    display: inline-block;
+}
+.w(@a) {
+    width:@a
+}
+.h(@a) {
+    height:@a
+}
+// 定位相关
+.pa(){
+    position:absolute
+}
+.pf() {
+    position:fixed
+}
+.pr() {
+    position:relative
+}
+.t(@a) {
+    top:@a
+}
+.l(@a) {
+    left:@a
+}
+.r(@a) {
+    right:@a
+}
+.b(@a) {
+    bottom: @a;
+}
+.m(@a,@b,@c,@d) {
+    margin:@a @b @c @d
+}
+.ml(@a) {
+    margin-left: @a;
+}
+.mt(@a) {
+    margin-top: @a;
+}
+.mr(@a) {
+    margin-right: @a;
+}
+.mb(@a) {
+    margin-bottom: @a;
+}
+.p(@a,@b,@c,@d) {
+    padding:@a @b @c @d
+}
+.pl(@a) {
+    padding-left: @a;
+}
+.pt(@a) {
+    padding-top: @a;
+}
+.pr(@a) {
+    padding-right: @a;
+}
+.pb(@a) {
+    padding-bottom: @a;
+}
+.left() {
+    float:right
+}
+.right() {
+    float:right
+}
+.hidden() {
+    visibility: hidden;
+}
+.clearfix() {
+    &::after {
+        content:'';
+        .block;
+        clear:both;
+        .hidden;
+        .h(0);
+        .f(0)
+    }
+}
+// 字体相关
+.lh(@a) {
+    line-height: @a;
+}
+.f(@a) {
+    font-size: @a;
+}
+.fc(@a) {
+    color: @a;
+}
